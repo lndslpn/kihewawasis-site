@@ -10,8 +10,6 @@ const links = [
   { href: "/request-care", label: "Request Care" },
   { href: "/events-calendar", label: "Events Calendar" },
   { href: "/newsletter", label: "Newsletter" },
-  { href: "/groups", label: "Groups" },
-  { href: "/members", label: "Members" },
 ];
 
 export default function Navbar() {
@@ -71,7 +69,7 @@ export default function Navbar() {
                   to={l.href}
                   className={[
                     "group relative inline-block px-2 pt-4 pb-2",
-                    "font-sans font-extralight italic text-[24px]",
+                    "font-['Source_Sans_3'] font-extralight italic text-[24px]",
                     "transition-colors",
                     isActive
                       ? "text-deeppurple"
@@ -119,7 +117,7 @@ export default function Navbar() {
                 key={l.href}
                 to={l.href}
                 onClick={() => setOpen(false)}
-                className="rounded-md px-3 py-2 font-sans italic text-[18px] text-headertext hover:text-deeppurple hover:bg-deeppurple/5"
+                className="rounded-md px-3 py-2 font-['Source_Sans_3'] italic text-[18px] text-headertext hover:text-deeppurple hover:bg-deeppurple/5"
               >
                 {l.label}
               </Link>
@@ -129,7 +127,7 @@ export default function Navbar() {
               href={GOFUNDME_URL}
               target="_blank"
               rel="noreferrer"
-              className="mt-2 rounded-md px-3 py-2 font-sans italic text-[18px] text-deeppurple hover:bg-deeppurple/5"
+              className="mt-2 rounded-md px-3 py-2 font-['Source_Sans_3'] italic text-[18px] text-deeppurple hover:bg-deeppurple/5"
             >
               Donate (GoFundMe)
             </a>

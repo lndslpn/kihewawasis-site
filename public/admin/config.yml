@@ -1,0 +1,48 @@
+backend:
+  name: git-gateway
+  branch: main
+
+media_folder: "public/uploads"
+public_folder: "/uploads"
+
+collections:
+  - name: "events"
+    label: "Events"
+    label_singular: "Event"
+    folder: "src/content/events"
+    create: true
+    slug: "{{slug}}"
+    format: "frontmatter"
+    extension: "md"
+    fields:
+      - { label: "Title", name: "title", widget: "string" }
+      - { label: "Date", name: "date", widget: "datetime", time_format: false }
+      - { label: "Multiple Dates Label", name: "tag", widget: "string", required: false, hint: "e.g., Multiple Dates" }
+      - { label: "Location", name: "location", widget: "string" }
+      - { label: "Summary", name: "summary", widget: "text" }
+      - { label: "More Info URL", name: "moreInfoUrl", widget: "string", required: false }
+      - { label: "Button Text", name: "buttonText", widget: "string", default: "Details" }
+      - { label: "Button URL", name: "buttonUrl", widget: "string", required: false }
+      - { label: "Image", name: "image", widget: "image" }
+  - name: "newsletter"
+    label: "Newsletter"
+    label_singular: "Issue"
+    folder: "src/content/newsletter"
+    create: true
+    slug: "{{slug}}"
+    format: "frontmatter"
+    extension: "md"
+    fields:
+      - { label: "Title / Volume", name: "title", widget: "string" }
+      - { label: "Date", name: "date", widget: "datetime", time_format: false }
+      - { label: "Summary", name: "summary", widget: "text", required: false }
+      - { label: "Cover Image", name: "coverImage", widget: "image" }
+      - label: "Pages"
+        name: "pages"
+        widget: "list"
+        required: false
+        field:
+          { label: "Page Image", name: "pageImage", widget: "image" }
+      - { label: "PDF or External Link", name: "linkUrl", widget: "string", required: false, hint: "URL to open the full issue (PDF or external page)" }
+      - { label: "Author", name: "author", widget: "string", required: false }
+      - { label: "Read Time", name: "readTime", widget: "string", required: false, hint: "e.g., 5 min read" }
