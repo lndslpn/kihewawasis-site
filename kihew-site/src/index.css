@@ -1,1 +1,36 @@
+@import url("https://fonts.googleapis.com/css2?family=Source+Sans+3:ital,wght@1,400;1,500;1,600&display=swap");
 @import "tailwindcss";
+
+/* Theme Tokens */
+@theme {
+  /* Colors */
+  --color-header: #CAC0F4;
+  --color-footer: #CAC0F4;
+  --color-deeppurple: #2B197C;
+  --color-headertext: #858585;
+
+  --font-nav: "Open Sans", system-ui, sans-serif;
+
+  /* Font Styles */
+  --font-inria: "Inria Sans", ui-sans-serif, system-ui, sans-serif;
+  --font-instrument: "Instrument Sans", sans-serif;
+
+  --color-kaw-header: #e7e7ee;      /* header background */
+  --color-kaw-navMuted: #8f8f95;    /* inactive link */
+  --color-kaw-navActive: #2b2b2b;   /* active link */
+  --color-kaw-indicator: #111111;   /* active underline bar */
+  --color-kaw-gfm: #2c8b86;         /* gofundme circle */
+
+  --color-greenhead: #355B2FB3;
+  --color-darkgreenhead: #355B2F;
+  --color-whitetext: #FFFFFF;
+  --color-tanback: #C4BCA5;
+  --color-lighttanback: #E1D8BE;
+  --color-greentxt: #174F14;
+  --color-tantxt: #80530E;
+  --color-offwhite: #EAE7DF;
+  
+  --font-kawNav: "APPLE_FONT_NAME", system-ui, sans-serif;
+}
+
+html { scroll-behavior: smooth; }
