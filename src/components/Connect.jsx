@@ -47,20 +47,22 @@ export default function Connect() {
     <main className="w-full">
 
       {/* HERO / GREETING */}
-      <section className="w-full py-10" style={{background: "linear-gradient(135deg, #e6dbf5 0%, #f7d7e2 95%)",}}>
+      <section className="w-full py-16 md:py-20" style={{background: "linear-gradient(135deg, #e6dbf5 0%, #f7d7e2 95%)",}}>
         <div className="max-w-4xl mx-auto px-6 text-center p-5">
 
         <ScaleFadeText
             texts={["Tansi", "Taanishi", "Boozhoo", "Welcome"]}
-            className="text-3xl md:text-4xl font-sans italic text-indigo-800 leading-[1.15] py-2"
+            className="text-3xl md:text-4xl font-['Source_Sans_3']
+             italic text-indigo-800 leading-[1.15] py-4"
             />
             <img
                 src={babyImg}
                 alt="Community image"
-                className="mx-auto w-[220px] border-[3px] border-indigo-700 mb-8"
+                className="mx-auto w-[220px] border-[3px] border-indigo-700 mt-2 mb-10"
             />
 
-            <p className="font-sans italic text-[15px] text-indigo-900 max-w-xl mx-auto leading-7">
+            <p className="font-['Source_Sans_3']
+             italic text-[15px] text-indigo-900 max-w-xl mx-auto leading-7">
                 Becoming a member of Kihew Awasis Wakamik Cultural Society
                 (formerly Indigenous Birth of Alberta) will create the opportunity
                 to join a community with a common goal to (re)awaken the traditional
@@ -81,14 +83,16 @@ export default function Connect() {
       <section className="w-full py-24">
         <div className="max-w-6xl mx-auto px-6">
 
-          <h2 className="font-sans italic text-[32px] text-indigo-800 text-center mb-16">
+          <h2 className="font-['Source_Sans_3']
+           italic text-[32px] text-indigo-800 text-center mb-16">
             Connect With Us
           </h2>
 
           <div className="grid grid-cols-1 md:grid-cols-2 gap-16 items-start">
 
             {/* LEFT INFO */}
-            <div className="text-indigo-900 font-sans italic text-[14px] space-y-4">
+            <div className="text-indigo-900 font-['Source_Sans_3']
+             italic text-[14px] space-y-4">
               <p>
                 Email:{" "}
                 <a
@@ -121,7 +125,7 @@ export default function Connect() {
                         <a
                             href="https://www.instagram.com/kihewawasiswakamik/"
                             aria-label="Instagram"
-                            className="inline-block"
+                            className="inline-block py-0.25"
                             target="_blank"
                             rel="noreferrer"
                         >
@@ -189,10 +193,11 @@ export default function Connect() {
       </section>
 
       <section className="w-full py-20 text-center">
-            <a href="https://www.gofundme.com/f/YOUR-CAMPAIGN-LINK" target="_blank" rel="noreferrer" 
+            <a href="https://www.gofundme.com/f/kihew-awasis-wakamik-indigenous-birth-alberta/" target="_blank" rel="noreferrer" 
                 className="inline-block px-10 py-8 rounded-xl transitionhover:scale-[1.02] hover:shadow-xl focus:outline-none focus-visible:ring-2 focus-visible:ring-indigo-500">
                 <img src={gofundmeLogo} alt="GoFundMe" className="mx-auto w-16 mb-6"/>
-                <h3 className="font-sans italic text-[28px] text-indigo-800">
+                <h3 className="font-['Source_Sans_3']
+                 italic text-[28px] text-indigo-800">
                 Support Our Community Fund
                 </h3>
             </a>

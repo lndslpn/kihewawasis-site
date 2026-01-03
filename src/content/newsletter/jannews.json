@@ -1,0 +1,13 @@
+{
+  "title": "Volume 1",
+  "date": "2024-04-01T00:00:00-06:00",
+  "summary": "Kihew Awasis Wakamik Newsletter - Volume 1",
+  "coverImage": "/images/newsletter/news1.jpeg",
+  "pages": [
+    { "pageImage": "/images/newsletter/news1.jpeg" },
+    { "pageImage": "/images/newsletter/news2.jpeg" }
+  ],
+  "linkUrl": "/images/newsletter/news1.jpeg",
+  "author": "KAWCS",
+  "readTime": "10 min read"
+}
